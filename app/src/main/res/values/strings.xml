@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PaddleOCR Screenshot App</string>
+    <string name="button_screenshot">截屏识别</string>
+    <string name="text_recognition_result">识别结果：</string>
+    <string name="loading">加载中...</string>
+    <string name="error_initializing">初始化失败</string>
+    <string name="error_recognition">识别失败</string>
+</resources>
