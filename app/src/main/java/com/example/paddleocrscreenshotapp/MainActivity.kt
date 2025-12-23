@@ -11,17 +11,14 @@ import android.media.projection.MediaProjectionManager
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.paddleocrscreenshotapp.databinding.ActivityMainBinding
 import java.io.ByteArrayOutputStream
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
     private lateinit var mediaProjectionManager: MediaProjectionManager
     private var mediaProjection: MediaProjection? = null
     private lateinit var screenshotButton: Button
@@ -32,11 +29,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_main)
 
-        screenshotButton = binding.buttonScreenshot
-        resultText = binding.textRecognitionResult
+        screenshotButton = findViewById(R.id.button_screenshot)
+        resultText = findViewById(R.id.text_recognition_result)
 
         // 初始化PaddleOCR
         ocrHelper = OCRHelper.getInstance(this)
