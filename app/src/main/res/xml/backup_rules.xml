@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    This file defines backup rules for the application.
+    Learn more at https://developer.android.com/guide/topics/data/autobackup
+-->
+<full-backup-content>
+    <!-- Exclude all data from backup by default -->
+    <exclude domain="*" path="*" />
+</full-backup-content>

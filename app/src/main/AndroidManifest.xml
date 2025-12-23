@@ -24,7 +24,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PaddleOCRScreenshotApp"
         android:requestLegacyExternalStorage="true" <!-- SDK 29以上版本的兼容配置 -->
-        android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules">
         <activity
             android:name=".MainActivity"
